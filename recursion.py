@@ -74,6 +74,35 @@ def max(list):
 
 #max([2,3,4,5])
 
+# recursive binary search
+def binary_search(arr, target):
+   left = 0
+   right = len(arr) - 1
+
+   while left <= right:
+       mid = (right + left) // 2
+       #id = (right - left)//2 # with every iteration calculate the middle, //2 rounds down
+       if arr[mid] < target:
+           left = mid + 1
+       elif arr[mid] > target:
+           right = mid - 1
+       else:
+           return mid
+   return -1
 
 
+def binary_recursive(arr_list, left, right, target):
+     if right >= left:
+        mid = (right + left)//2
+        if arr_list[mid] == target:
+            return mid
+        if arr_list[mid] < target:
+            return binary_recursive(arr_list, mid + 1, right, target)
+        elif arr_list[mid] > target:
+            return binary_recursive(arr_list, left, mid - 1, target)
+        else:
+            return -1
+
+arr_list = [2,3,4,6,7,11,13,15]
+print(binary_recursive(arr_list, left=0, right=len(arr_list)-1, target=11))
 
