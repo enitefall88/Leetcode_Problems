@@ -7,7 +7,7 @@ def inf_recursion(int):
 
 inf_recursion(-33)
 
-ef sum_up(array):
+def sum_up(array):
     result = 0
     for element in array:
         result += element
@@ -54,7 +54,7 @@ def count_list_items(list):
     else:
         return 1 + count_list_items(list[1:])  # every run is +1
 
-count_list_items([2,3,4,5]) # how can we return and use the final result in a recursive function?
+#count_list_items([2,3,4,5]) # how can we return and use the final result in a recursive function?
 
 #recursive maximum number in a list
 def maximum_number(list):
@@ -63,7 +63,7 @@ def maximum_number(list):
         submax = maximum_number(list[1:]) # iterating through all elements of the list
         return list[0] if list[0] > submax else submax #
 
-maximum_number([2,3,4,5])
+#maximum_number([2,3,4,5])
 
 
 def max(list):
@@ -72,4 +72,8 @@ def max(list):
     sub_max = max(list[1:])
     return list[0] if list[0] > sub_max else sub_max
 
-max([2,3,4,5])
+#max([2,3,4,5])
+
+
+
+
