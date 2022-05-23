@@ -44,7 +44,7 @@ def sum_up_recursively_with_pop(array): # this does not work
       return 0
   else:
       return array[0] + sum_up_recursively_with_pop(array.remove(array[0])) # does not work because returns the first el?
-
+fr
 #  sum_up_recursively_with_pop(array=[2,3,4,5])
 
 #recursive function to count items in a list
@@ -106,3 +106,11 @@ def binary_recursive(arr_list, left, right, target):
 arr_list = [2,3,4,6,7,11,13,15]
 print(binary_recursive(arr_list, left=0, right=len(arr_list)-1, target=11))
 
+def phoneNumbers(array):
+    result = []
+    if array == []:
+        return result
+    else:
+        result.append(phoneNumbers(array[1:]))
+
+print(phoneNumbers())
