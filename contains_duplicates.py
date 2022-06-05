@@ -8,5 +8,6 @@ def containsDuplicate(nums: [int]) -> bool:
             return True
         else:
             hashset.add(n)
+    return False
 
 print(containsDuplicate(nums))
