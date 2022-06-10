@@ -32,3 +32,5 @@ def quicksort2(list):
     return quicksort(items_smaller) + [pivot] + quicksort(items_greater)
 
 print(quicksort2([1,2,3,4,3,3,4,5,6,7]))
+
+
