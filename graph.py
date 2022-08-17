@@ -3,11 +3,16 @@ graph = {}
 graph['you'] = ['alice', 'bob', 'claire']
 graph['alice'] = ['zed', 'marlem']
 graph['marlem'] = ['zik', 'zak']
+graph["zik"] = []
+graph["zed"] = []
+graph["zak"] = []
+
 search_queue = deque()
 search_queue += graph['you']
 
 def person_is_seller(name):
-    return name[-1] == 'm'
+    if name[-1] == 'm':
+        return name
 
 def bfe(graph, search_queue,):
     while search_queue: # while the queue is not empty
