@@ -27,9 +27,9 @@ def search(name):
             if person_is_seller(person):
                 print(f"{person} is a mango seller")
                 return True
-        else:
-            search_queue += graph[person]
-            searched.append(person)
+            else:
+                search_queue += graph[person]
+                searched.append(person)
     return False
 
 
