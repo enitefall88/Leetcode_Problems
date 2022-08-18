@@ -7,11 +7,12 @@ graph = {}
 graph["you"] = ["alice", "bob", "claire"]
 graph["bob"] = ["anuj", "peggy"]
 graph["alice"] = ["peggy"]
-graph["claire"] = ["thom", "jonny"]
+graph["claire"] = ["thom", "jonny", "mike"]
 graph["anuj"] = []
 graph["peggy"] = []
 graph["thom"] = []
 graph["jonny"] = []
+graph["mike"] = []
 
 def search(name):
     search_queue = deque()
