@@ -32,7 +32,7 @@ def search(name):
                 searched.append(person)
     return False
 
-#todo
+
 
 search("you")
 
