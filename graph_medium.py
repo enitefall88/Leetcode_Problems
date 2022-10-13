@@ -52,6 +52,6 @@ def search_correct(name):
                 # Marks this person as searched
                 searched.append(person)
     return False
-#todo
+
 
 search_correct('you')
