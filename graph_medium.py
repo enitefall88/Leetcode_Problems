@@ -15,6 +15,9 @@ graph["peggy"] = []
 graph["thom"] = []
 graph["jonny"] = []
 
+graph["jonny1"] = []
+
+
 
 
 def search(name):
