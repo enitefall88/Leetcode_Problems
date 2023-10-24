@@ -1,7 +1,34 @@
-list_with_numbers = [1, 3, 4, 2, 121, 4, 54]
+def second_largest(numbers):
+    # if len(numbers) < 2:
+    #     return "List has less than two elements"
+    first_max = second_max = float('-inf')
 
-sorted_list = sorted(list_with_numbers)
+    for num in numbers:
+        if num > first_max:
+            second_max = first_max
+            first_max = num
+            print(first_max,second_max)
+        elif num > second_max and num != first_max:
 
-second_largest = sorted_list[len(sorted_list) -2]
+            second_max = num
 
-print(sorted_list, second_largest)
+    if second_max == float('-inf'):
+        return "No second largest element found"
+
+    return second_max
+
+
+# Example usage
+numbers = [1, 3, 4, 2, 121, 4, 54]
+result = second_largest(numbers)
+print("Second largest number is:", result)
+
+
+def largest(list):
+    max_num = second_max_num = float('-inf')
+    for num in list:
+        if num > max_num:
+            second_max_num = max_num
+            max_num = num
+    print(second_max_num)
+largest([1, 3, 4, 2, 121, 4, 54])
