@@ -1,6 +1,5 @@
 def second_largest(numbers):
-    # if len(numbers) < 2:
-    #     return "List has less than two elements"
+
     first_max = second_max = float('-inf')
 
     for num in numbers:
