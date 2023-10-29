@@ -20,7 +20,7 @@ def second_largest(numbers):
 # Example usage
 numbers = [1, 3, 4, 2, 121, 4, 54]
 result = second_largest(numbers)
-#print("Second largest number is:", result)
+
 
 
 def largest(list):
