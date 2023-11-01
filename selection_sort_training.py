@@ -16,7 +16,6 @@
 #         resulting_array.append(array.pop(smallest))
 #     return resulting_array
 #
-# print(selection_sort(array=[4,3,5,6,7]))
 
 
 def find_smallest_el_index(array):
